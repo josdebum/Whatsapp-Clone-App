@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_height="300dp"
+        android:layout_width="368dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardUseCompatPadding="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+
+    <LinearLayout
+        android:background="@color/colorAccent"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingStart="50dp"
+        android:paddingEnd="30dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Enter Your Status"/>
+
+    <EditText
+        android:background="@drawable/selector_bg_edit_2"
+        android:layout_height="44dp"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#f0f7f4"
+        android:inputType="textPersonName"
+        android:textCursorDrawable="@drawable/bg_input_cursor_2"
+        android:hint="Status..."
+        android:ems="10"
+        android:id="@+id/statusUpdateEt"/>
+
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <Button
+        android:background="@drawable/bt_shape"
+        android:layout_height="45dp"
+        android:layout_width="160dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#d3d3d3"
+        android:text="Update Status"
+        android:id="@+id/statusUpdateBtn"
+        android:stateListAnimator="@drawable/state_list_animator_z"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
